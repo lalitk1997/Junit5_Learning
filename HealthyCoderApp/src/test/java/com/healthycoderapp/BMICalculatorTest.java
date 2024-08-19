@@ -1,18 +1,14 @@
 package com.healthycoderapp;
 
+import org.junit.jupiter.api.Test;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class BMICalculatorTest {
 
-    @org.junit.jupiter.api.Test
-    void isDietRecommended() {
+    @Test
+    void shouldCalculateBMI() {
+        assertTrue(BMICalculator.isDietRecommended(10, 10));
     }
 
-    @org.junit.jupiter.api.Test
-    void findCoderWithWorstBMI() {
-    }
-
-    @org.junit.jupiter.api.Test
-    void getBMIScores() {
-    }
 }
